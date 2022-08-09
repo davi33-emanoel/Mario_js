@@ -34,12 +34,12 @@ const loop = setInterval(() => {
     mario.style.animation = "none";
     mario.style.bottom = `${marioPosition}px`;
 
-    mario.src = "/images/game-over.png";
+    mario.src = ".././images/game-over.png";
     mario.style.width = "75px";
     mario.style.marginLeft = "50px";
 
     song.pause();
-    song = new Audio("./musicas/gameOver.mp3");
+    song = new Audio(".././musicas/gameOver.mp3");
     song.play();
     botao2();
 
