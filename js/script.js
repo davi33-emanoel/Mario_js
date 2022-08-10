@@ -43,7 +43,7 @@ const loop = setInterval(() => {
 
     clearInterval(loop);
   }
-}, 100);
+}, 10);
 
 function botao2() {
   setTimeout(function () {
