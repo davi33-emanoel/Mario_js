@@ -193,3 +193,11 @@
     display: none;
     width: 450px;
 }
+.marioSom{
+    position: absolute;
+}
+.marioMorto{
+    position: absolute;
+    bottom: 0;
+    display:none;
+}

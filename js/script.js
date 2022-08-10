@@ -5,7 +5,6 @@ const jumpSong = document.getElementById("jump");
 let botao = document.getElementById("botao");
 let gameOverGif = document.getElementById("gameOverGif");
 let song = document.getElementById("song");
-
 let score = 0;
 
 function updateDisplay(val) {
@@ -23,9 +22,8 @@ const jump = () => {
 
 const loop = setInterval(() => {
   const pipePosition = pipe.offsetLeft;
-  const marioPosition = +window
-    .getComputedStyle(mario)
-    .bottom.replace("px", "");
+  const marioPosition = +window.getComputedStyle(mario).bottom.replace("px", "");
+  
 
   if (pipePosition <= 120 && pipePosition > 0 && marioPosition < 80) {
     pipe.style.animation = "none";
@@ -34,18 +32,19 @@ const loop = setInterval(() => {
     mario.style.animation = "none";
     mario.style.bottom = `${marioPosition}px`;
 
-    mario.src = ".././images/game-over.png";
+    mario.setAttribute("src","./images/game-over.png");
+    //mario.src = "../images/game-over.png";
     mario.style.width = "75px";
     mario.style.marginLeft = "50px";
 
     song.pause();
-    song = new Audio(".././musicas/gameOver.mp3");
+    song = new Audio("./musicas/gameOver.mp3");
     song.play();
     botao2();
 
     clearInterval(loop);
   }
-}, 10);
+}, 100);
 
 function botao2() {
   setTimeout(function () {
