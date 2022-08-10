@@ -212,7 +212,7 @@ audio::-webkit-media-controls-timeline {
 audio::-webkit-media-controls-panel {
     background: url('../images/5cde149a93033d9.png');
 }
-@media (max-width: 400px){
+@media (max-width: 450px){
     .game-board {
         width: 100%;
         height: 500px;
