@@ -14,7 +14,7 @@ const jump = () => {
   mario.classList.add("jump");
   updateDisplay((score += 10));
   jumpSong.play();
-  jumpSong.playbackRate = 2;
+  jumpSong.playbackRate = 3;
   setTimeout(() => {
     mario.classList.remove("jump");
   }, 500);
@@ -60,3 +60,4 @@ function gameOver() {
   });
 }
 document.addEventListener("keydown", jump);
+document.addEventListener("touchstart",jump);
